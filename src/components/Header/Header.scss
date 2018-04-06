@@ -1,0 +1,98 @@
+@import "../../style/settings.scss";
+
+.site-header {
+	
+	display: flex;
+	box-sizing: border-box;
+	
+	position: fixed;
+	
+	overflow: visible;
+	
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 20px;
+	
+	align-items: baseline;
+	
+	width: 100%;
+	top: 0;
+	left: 0;
+	
+	color: $excl-text-color;
+	// mix-blend-mode: exclusion;
+	background-color: $main-bg-color;
+	
+	
+	&.inactive {
+		opacity: 0;
+	}
+	
+	&.active {
+		opacity: 1;
+	}
+	
+	.site-title {
+		
+		flex-basis: 0%;
+		flex-grow: 1;
+		flex-shrink: 1;
+			
+		
+		.title-logo {
+			
+			display: None;
+			
+		}
+		
+		.title-text {
+			
+			font-size: 30px;
+			line-height: 35px;
+			font-weight: 400;
+			
+		}
+		
+	}
+	
+	.site-nav {
+		
+		display: block;
+		position: relative;
+		
+		padding: 0;
+		
+		align-items: baseline;
+		
+		font-size: 20px;
+		line-height: 25px;
+	
+		.nav-list {
+			
+			display: flex;
+			
+			justify-content: flex-end;
+			
+			list-style: none;
+			
+			padding: 0;
+			margin: 0;
+			
+			.nav-item {
+				
+				display: inline-block;
+				position: relative;
+				
+				padding: 0;
+				
+				margin-left: 30px;
+				margin-right: 30px;
+				
+			}
+			
+		}
+		
+	}
+	
+}

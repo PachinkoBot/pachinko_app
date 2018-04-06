@@ -1,0 +1,240 @@
+@import "../../style/settings.scss";
+
+.site-sidebar {
+	
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: $main-bg-color;
+	
+	.sidebar-line {
+		
+		position: absolute;
+		right: 0;
+		top: 0;
+		
+		width: 1px;
+		height: 100%;
+		background-color: $main-text-color;
+		
+		z-index: 100;
+		
+	}
+	
+	
+	.sidebar-extend, .sidebar-sticky {
+	
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		
+		position: absolute;
+		top: 0;
+		
+	}
+	
+	.sidebar-top-el {
+		
+			position: absolute;
+			top: 100px;
+			left: 25px;
+			
+	}
+	
+	.sidebar-mid-el {
+		
+		position: absolute;
+		top: 50%;
+		left: 25px;
+		
+	}
+	
+	.sidebar-bot-el {
+		
+		position: absolute;
+		bottom: 100px;
+		left: 25px;
+		
+	}
+	
+	.sidebar-extend {
+		
+		width: calc(100% - 100px);
+		left: 0;
+		box-sizing: border-box;
+		
+		&:before {
+			
+			content: ' ';
+			
+			position: absolute;
+			right: 0;
+			top: 0;
+			
+			width: 1px;
+			height: 100%;
+			background-color: $main-text-color;
+			opacity: 0.25;
+			
+			z-index: 100;
+			
+		}
+		
+		.extend-title {
+			
+			cursor: pointer;
+			right: 50px;
+			text-align: right;
+			
+			.title {
+				
+				padding-top: 10px;
+				font-size: 25px;
+				line-height: 25px;
+				
+			}
+			
+		}
+		
+		.sidebar-nav {
+			
+			align-items: baseline;
+			font-size: 50px;
+			line-height: 50px;
+			left: 0;
+			width: 100%;
+			
+			transform: translateY(-50%);
+			
+			.nav-list {
+				
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				justify-content: space-evenly;
+				
+				.nav-item {
+					
+					display: inline-block;
+					// width: 30%;
+					padding: 0;
+					
+					span {
+						display: inline-block;
+						margin-bottom: 15px;
+						padding-bottom: 10px;
+						
+						&:before {
+							height: 5px;
+						}
+						
+					}
+				}
+
+			}
+
+		}
+		
+	}
+	
+	.sidebar-sticky {
+		
+		width: 100px;
+		right: 0;
+	
+		.sticky-logo {
+			
+			cursor: pointer;
+			
+			.logo {
+				
+				width: 60%;
+				
+				svg {
+					
+					width: 100%;
+					max-height: 100%;
+					
+				}
+				
+				margin-bottom: 20px;
+				
+			}
+			
+		}
+		
+		.sticky-burger {
+			
+			left: 32.5px;
+			width: 25%;
+			overflow: hidden;
+			cursor: pointer;
+			
+			.patty {
+				
+				background-color: $main-text-color;
+				width: 100%;
+				height: 1px;
+				margin: 5px;
+				
+			}
+			
+			&.active {
+				
+				transform-origin: center center;
+				transition: all .3s cubic-bezier(.9, .07, .08, .935);
+					
+				&:hover {
+					transform: rotate(90deg);
+				}
+				
+				&.open {
+					transform: rotate(90deg);
+				}
+
+				
+			}
+
+		}
+		
+		// .sticky-cross {
+			
+		// 	visibility: hidden;
+		// 	left: 32.5px;
+		// 	width: 25%;
+		// 	padding-top: 10px;
+		// 	padding-left: 5px;
+		// 	overflow: hidden;
+		// 	height: 10px;
+		// 	cursor: pointer;
+			
+		// 	.left, .right {
+				
+		// 		background-color: $main-text-color;
+		// 		width: 100%;
+		// 		height: 1px;
+		// 		transform-origin: center center;
+				
+		// 	}
+			
+		// 	.left {
+				
+		// 		transform: rotate(-45deg);
+				
+		// 	}
+			
+		// 	.right {
+				
+		// 		transform: rotate(45deg);
+				
+		// 	}
+
+		// }
+		
+	}
+	
+}
