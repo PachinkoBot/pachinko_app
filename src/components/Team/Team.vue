@@ -8,18 +8,18 @@
 	<section class="team-page" id="team-page">
 
 		<div class="page-wrapper" :class="{ locked: isLocked }">
-			
+
 			<animated_title :class="'page-title page-section'" :id="'page-title'" :titleText="'Team'" v-show="isActive" />
 
 			<div class="team-about page-section" id="team-about">
-				
-				<animated_title :titleText="'We are a team of blah blah blah working on Lorem I mean its not ibsen...'" :delay=0.5 v-show="isActive" />
-			
-				<animated_par :parText="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis porttitor magna ut aliquam. Nunc ipsum risus, scelerisque non tempus et, pretium dictum turpis. Quisque vel lectus efficitur, consequat libero hendrerit, malesuada orci. Proin sollicitudin arcu mi, porttitor feugiat tortor scelerisque eget. Donec et eros sed libero aliquam tempus. Pellentesque lacinia placerat sem, sed dignissim nisl consectetur eget. Morbi non dui metus. Aliquam erat volutpat.'" :delay=1 v-show="isActive" />
+
+				<animated_title :titleText="'We are a robotics team of five students under the parent organization of Robotics at Berkeley.'" :delay=0.5 v-show="isActive" />
+
+				<animated_par :parText="'We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.'" :delay=1 v-show="isActive" />
 
 			</div>
 
-		
+
 			<animated_image :class="'team-image page-section'" :id="'team-image'" :imageSrc="'static/images/team.jpg'" :delay="1" v-show="isActive"/>
 
 			<!--<div class="page-title page-section" id="page-title">
@@ -27,7 +27,7 @@
 			</div>-->
 
 			<!--<div class="team-image page-section" id="team-image">
-				
+
 				<img src="static/images/team.jpg"></img>
 
 			</div>-->
@@ -36,16 +36,16 @@
 
 				<div class="team-description" id="team-description">
 
-					<h1>We are a team of blah blah blah working on Lorem I mean its not ibsen...</h1>
-				
+					<h1>We are a robotics team of five students under the parent organization of Robotics at Berkeley.</h1>
+
 					<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis porttitor magna ut aliquam. Nunc ipsum risus, scelerisque non tempus et, pretium dictum turpis. Quisque vel lectus efficitur, consequat libero hendrerit, malesuada orci. Proin sollicitudin arcu mi, porttitor feugiat tortor scelerisque eget. Donec et eros sed libero aliquam tempus. Pellentesque lacinia placerat sem, sed dignissim nisl consectetur eget. Morbi non dui metus. Aliquam erat volutpat.
+	We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.
 					</p>
 
 				</div>
 
 				<div class="team-image" id="team-image">
-					
+
 					<img src="static/images/team.jpg"></img>
 
 				</div>
@@ -59,8 +59,8 @@
 			</div> -->
 
 			<div class="members-about page-section" id="members-description">
-				
-				<animated_title :titleText="'Meet our memebrs'" :delay=2 v-show="isActive" />
+
+				<animated_title :titleText="'Meet our members'" :delay=2 v-show="isActive" />
 
 				<animated_par :parText="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis porttitor magna ut aliquam. Nunc ipsum risus, scelerisque non tempus et, pretium dictum turpis. Quisque vel lectus efficitur, consequat libero hendrerit, malesuada orci. Proin sollicitudin arcu mi, porttitor feugiat tortor scelerisque eget. Donec et eros sed libero aliquam tempus. Pellentesque lacinia placerat sem, sed dignissim nisl consectetur eget. Morbi non dui metus. Aliquam erat volutpat.'" :delay=2.5 v-show="isActive" />
 
@@ -115,7 +115,7 @@
 			</div>-->
 
 		</div>
-	
+
 	</section>
 
 	</transition>
