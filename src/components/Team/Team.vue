@@ -13,9 +13,9 @@
 
 			<div class="team-about page-section" id="team-about">
 
-				<animated_title :titleText="'We are a robotics team of five students under the parent organization of Robotics at Berkeley.'" :delay=0.5 v-show="isActive" />
+				<animated_title :titleText="'A robotics team inspired to help people in emergency situations.'" :delay=0.5 v-show="isActive" />
 
-				<animated_par :parText="'We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.'" :delay=1 v-show="isActive" />
+				<animated_par :parText="'We are a robotics team of five students under the parent organization of Robotics at Berkeley. We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.'" :delay=1 v-show="isActive" />
 
 			</div>
 
@@ -36,10 +36,10 @@
 
 				<div class="team-description" id="team-description">
 
-					<h1>We are a robotics team of five students under the parent organization of Robotics at Berkeley.</h1>
+					<h1>A robotics team inspired to help people in emergency situations.</h1>
 
 					<p>
-	We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.
+We are a robotics team of five students under the parent organization of Robotics at Berkeley. We were challenged to build a robot that helps first responders during humanitarian crises, so we designed a small robot to enter rubble and locate a human being by searching for heat. We hope to run our robot autonomously, minimizing the risk posed to humans in emergency situations. With this, we hope that our robot becomes an essential and cost-effective part of disaster recovery.
 					</p>
 
 				</div>
@@ -60,9 +60,9 @@
 
 			<div class="members-about page-section" id="members-description">
 
-				<animated_title :titleText="'Meet our members'" :delay=2 v-show="isActive" />
+				<animated_title :titleText="'Meet Our Members'" :delay=2 v-show="isActive" />
 
-				<animated_par :parText="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis porttitor magna ut aliquam. Nunc ipsum risus, scelerisque non tempus et, pretium dictum turpis. Quisque vel lectus efficitur, consequat libero hendrerit, malesuada orci. Proin sollicitudin arcu mi, porttitor feugiat tortor scelerisque eget. Donec et eros sed libero aliquam tempus. Pellentesque lacinia placerat sem, sed dignissim nisl consectetur eget. Morbi non dui metus. Aliquam erat volutpat.'" :delay=2.5 v-show="isActive" />
+				<animated_par :parText="'	We started off as five individuals with a desire to help others. As time progressed, we not only brought our ideas together, but also became a team bonded by shared passions and experiences. Here are our members and their stories.'" :delay=2.5 v-show="isActive" />
 
 			</div>
 
@@ -96,7 +96,7 @@
 					<h1>Meet our members</h1>
 
 					<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis porttitor magna ut aliquam. Nunc ipsum risus, scelerisque non tempus et, pretium dictum turpis. Quisque vel lectus efficitur, consequat libero hendrerit, malesuada orci. Proin sollicitudin arcu mi, porttitor feugiat tortor scelerisque eget. Donec et eros sed libero aliquam tempus. Pellentesque lacinia placerat sem, sed dignissim nisl consectetur eget. Morbi non dui metus. Aliquam erat volutpat.
+	We started off as five individuals with a desire to help others. As time progressed, we not only brought our ideas together, but also became a team bonded by shared passions and experiences. Here are our members and their stories.
 					</p>
 
 				</div>
