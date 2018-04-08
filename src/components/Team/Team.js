@@ -17,7 +17,7 @@ export default {
 				{name: "Gurkiran Dhaliwal", id: "gurkiran", image:"static/images/temp-prof.jpg", position: "Code Daddy",
 				description: "I'm a third year math major, and I joined this club because I'm interested in autonomous robots. I want to learn more about how to design systems that can react to environmental inputs and make decisions on their own. I also enjoy the challenge of simplifying complicated tasks so that they can be handled by software. I'm hoping that through this project I will become a better programmer and will have more experience with the hardware side of robotics. My other interests include computer vision, painting, violin, and pool.",
 				social: [{text: "github", href: "https://github.com/gurkirand", id:"github"}, {text: "email", href: "mailto:gurkirand@gmail.com", id: "email"}]},
-				{name: "Stephanie Djajadi", id: "stephanie", image:"static/images/steph.jpg", position: "Finance Minister",
+				{name: "Stephanie Djajadi", id: "stephanie", image:"static/images/steph.JPG", position: "Finance Minister",
 				description: "Hi! I'm a first-year studying computer science and data science, and I'm excited to learn about the potential of humanitarian applications of robotics. Outside of school, I like eating ramen, learning random fun facts, and exploring new places!",
 				social: [{text: "email", href: "mailto:sdjajadi@berkeley.edu", id: "email"}]},
 				{name: "Michael Lee", id: "michael", image:"static/images/temp-prof.jpg", position: "Social Media Rep",
