@@ -1,7 +1,5 @@
 <template>
 
-<template>
-
 	<transition
 	v-on:before-enter="beforeEnter"
 	v-on:enter="enterAnimation"
@@ -52,17 +50,17 @@
 
 			</div> -->
 
-			<!––div class="members-about page-section" id="members-description">
+			<!--<div class="members-about page-section" id="members-description">
 
 				<animated_title :titleText="'Meet Our Members'" :delay=2 v-show="isActive" />
 
 				<animated_par :parText="'	We started off as five individuals with a desire to help others. As time progressed, we not only brought our ideas together, but also became a team bonded by shared passions and experiences. Here are our members and their stories.'" :delay=2.5 v-show="isActive" />
 
-			</div-->
+			</div>-->
 
 			<!--div class="team-members page-section" id="team-members" v-show="isActive">
 
-				<!--ul class="member-list" id="member-list">
+				<ul class="member-list" id="member-list">
 					<li class="team-member" v-for="(member, index) in team_members" :key="member.id" :id="member.id" :class="{'mid': isMid(index), 'right': isEven(index), 'last': isLast(index) }" v-on:click="memberClick(member)">
 						<div class="member-image">
 							<img :src="member.image" />
@@ -76,11 +74,11 @@
 							</div>
 						</div>
 					</li>
-				</ul-->
+				</ul>
 
-			</div-->
+			</div> -->
 
-			<MemberPage :member="activeMember" :onClose="setUnlocked" ref="memberPage"/>
+			<!--<MemberPage :member="activeMember" :onClose="setUnlocked" ref="memberPage"/>-->
 
 
 			<!--<div class="team-members page-section" id="team-members">
@@ -113,24 +111,6 @@
 	</section>
 
 	</transition>
-
-</template>
-
-<script src="./Team.js"></script>
-
-<style lang="scss">
-@import './Team.scss';
-</style>
-
-
-
-
-
-
-
-
-
-
 
 </template>
 
