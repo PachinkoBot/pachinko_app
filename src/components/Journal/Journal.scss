@@ -1,0 +1,282 @@
+@import "../../style/settings.scss";
+
+.journal-page {
+
+	position: relative;
+	display: block;
+	// height: 100%;
+
+	.page-wrapper {
+		width: 100%;
+		// height: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		box-sizing: border-box;
+
+	}
+
+	.page-section {
+
+		margin-bottom: 200px;
+		box-sizing: border-box;
+
+	}
+
+	.page-title
+	{
+		font-size: 25px;
+		line-height: 25px;
+		opacity: 0.5;
+		text-align: left;
+		// color: $main-bg-color;
+		// text-shadow: 1px -1px 0 $main-text-color, -1px -1px 0 $main-text-color, -1px 1px 0 $main-text-color, 1px 1px 0 $main-text-color;
+		margin-bottom: 25px;
+		margin-top: 50px;
+	}
+
+	.journal-entry {
+
+		width: 100%;
+		display: block;
+
+		box-sizing: border-box;
+
+		vertical-align: top;
+
+		h1 {
+
+			font-size: 60px;
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 50px;
+			font-weight: 500;
+			padding-right: 10%;
+
+		}
+
+		p {
+
+			font-size: 25px;
+			margin: 0px;
+			font-weight: 400;
+			padding-right: 30%;
+
+		}
+
+	}
+
+	.team-image {
+
+		width: 100%;
+
+		img {
+
+			width: 100%;
+			height: auto;
+
+		}
+
+	}
+
+	.team-hero
+	{
+		font-size: 0px;
+
+		.team-description {
+
+			width: 100%;
+			display: block;
+
+			box-sizing: border-box;
+			padding-top: 100px;
+
+			vertical-align: top;
+
+			h1 {
+
+				font-size: 60px;
+				margin: 0px;
+				padding: 0px;
+				margin-bottom: 50px;
+				font-weight: 500;
+				padding-right: 10%;
+
+			}
+
+			p {
+
+				font-size: 25px;
+				margin: 0px;
+				font-weight: 400;
+				padding-right: 30%;
+
+			}
+
+		}
+
+		.team-image {
+
+			width: 100%;
+
+			img {
+
+				width: 100%;
+				height: auto;
+
+			}
+
+		}
+
+	}
+
+	.members-about {
+
+		width: 100%;
+		display: block;
+
+		box-sizing: border-box;
+
+		vertical-align: top;
+
+		p {
+
+			font-size: 40px;
+			margin: 0px;
+			padding: 0px;
+			font-weight: 500;
+			padding-right: 10%;
+
+		}
+
+		h1 {
+
+			font-size: 25px;
+			margin: 0px;
+			font-weight: 400;
+			margin-bottom: 50px;
+			padding-right: 25%;
+
+		}
+
+	}
+
+	.team-members {
+
+		.member-list {
+
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+
+			display: inline-block;
+
+			.team-member {
+
+				display: inline-block;
+				margin: 0px;
+				padding: 0px;
+				width: calc(30%);
+				margin-bottom: 10%;
+				cursor: pointer;
+
+				&.mid {
+					margin-right: 5%;
+					margin-left: 5%;
+				}
+
+				.member-image {
+
+					overflow: hidden;
+					position: relative;
+
+					img {
+						width: 100%;
+						transition: all .3s cubic-bezier(0, .45, .4, .99);
+					}
+
+					&:after {
+						content: ' ';
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						opacity: 0;
+						z-index:2;
+						transition: all .3s cubic-bezier(0, .45, .4, .99);
+						background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 47%, rgba(0,0,0,0.5) 100%);
+					}
+
+				}
+
+				.member-title {
+
+					padding-top: 15px;
+					padding-left: 5px;
+					padding-right: 5px;
+					padding-bottom: 20px;
+					width: 100%;
+					position: relative;
+					box-sizing: border-box;
+
+					.member-name {
+
+						font-size: 25px;
+						line-height: 25px;
+						overflow: hidden;
+						display: inline-block;
+
+						span:before {
+
+							margin-bottom: 5px;
+
+						}
+
+					}
+
+					.member-position {
+
+						font-size: 20px;
+						line-height: 20px;
+						opacity: 0.75;
+					}
+
+
+					.member-name, .member-position
+					{
+						padding-bottom: 10px;
+
+						span {
+							position: relative;
+							padding-bottom: 10px;
+							overflow: hidden;
+						}
+
+					}
+
+				}
+
+				&:hover {
+
+					.member-title .member-name span:before {
+
+						animation: fillIn .3s;
+						animation-fill-mode: forwards;
+
+					}
+
+					.member-image img {
+						transform: scale(1.1);
+					}
+
+					.member-image:after {
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
