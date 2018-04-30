@@ -105,7 +105,80 @@
 								<h2>Automatic detection of access holes in disaster rubble</h2>
 									<p>
 										This is a <a href="http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6719364"> paper</a> on hole detection in rubble to determine if canines or robots can enter for a search and rescue operation. This would allow rescuers to identify easy entry points. First, a hole is defined by its functionality as a means for accessing the interior; then, geometric and photometric features are used for hole detection. The team conducted experiments using RGB-D data collected over several disaster training facilities using a UAV.
+									</p><br><br>
+
+
+							<h1>Meeting 3: Design Research</h1>
+								<h2>Outer Layer Design Ideas</h2>
+									<p>
+										One design would be a sphere that encompasses the inner hardware. It could also feature ridges--either 2, 4, 8, or more evenly spaced out, or only one hemisphere that would allow for better traction and grip. Ridges would probably be hinges or completely stationary. <br><br>
+										The other design would be a sphere with two tank treads that move independently of each other as well as the outside sphere. It would be slightly raised so that the only contact would be with the treads to the ground.
 									</p><br>
+								<h2>Outer Layer Material Choices</h2>
+									<p>
+										<ul>
+											<li>Polyurethane Foam: Flexible, smooth, and rubbery, this material allows our robot to have traction on the ground as well as mobility through tighter space. However, it would still be difficult to squish down and continue movement.</li>
+											<li>Treads: These have good traction and are beneficial for movement with little fear of slippage due to their high coefficient of friction.</li>
+											<li>Polycarbonate Plastic (PC): This is used for the movement of the Sphero. It can be clear, is impact resistant, and is very strong and durable. However, it is a bit slippery, and it would take a bit more engineering and thought for movement.</li>
+											<li>Acrylonitrile-butadiene-styrene (ABS): The material is readily available so there is probably no need to purchase it, but it’s not as durable as PC and is more susceptible to wear and tear.</li>
+											<li>PLA: This material is also readily available, and Moffitt Library has a supply of this for free. This has similar issues with ABS, and it deforms at around 90° Celsius, but that shouldn’t be too big of a concern.</li>
+										</ul>
+									</p><br>
+							<h2>Motors</h2>
+								<p>
+									The motors need to be relatively tiny. They should be able to run off a lower voltage if we want it to be powered off an Arduino or Raspberry Pi. We are probably looking at some type of drone motor, because they are generally lightweight and small in dimensions.
+								</p><br><br>
+
+							<h1>Meeting 4: Finalize Design and Discuss Sensors</h1>
+									<p>
+										During this meeting we were able to finalize our design for our robot and discuss possible sensors that we wanted to include. Due to the difficulties of having the entire robot’s outer shell be a complete sphere and be attached to a tether, we decided on having a design featuring two separate hollow hemispheres which would act as the wheels. The hemispheres would move on independent motors, which would still allow it to have 360 degrees of motion using a tank-turn style of movement. Each hemisphere is attached to a motor shaft that sticks out of a centerpiece which will be stationary. The centerpiece will house the motors along with additional sensors that we choose to have. This way the wire could run directly into the centerpiece and its motion would be limited as long as it remains taut.
+										<br><br>
+										The sensors that we would like to incorporate are an accelerometer, encoders for the motors, and infrared sensors. We would be using the accelerometers and the encoders to return feedback of the robot’s movement and work alongside an encoder that controls the spool that gives slack to the tether. A system like this in theory would know when to give the robot more wire as to allow it to advance forward as well as a controlled descent if it falls into a pit.
+									</p><br><br>
+
+							<h1>Meeting 5: Stages of Development</h1>
+									<p>
+										After talking to our advisor, we evaluated our goals and and created a timeline for our robot development. We decided that it would be best to focus on getting our robot to detect something in rubble and mark the location of the object. To simulate this, we can use a heat source as the object the robot will detect; a heat source is representative of a human body since human body temperatures are generally higher than the ambient temperature.
+										<br><br>
+										We devised 8 different stages of development. While we may not get to the final stages, we have a better idea of what we want to do now.<br>
+										<ol>
+											<li>Create a maze for the robot. It will not be a direct path, but the terrain will be flat and smooth (e.g. a tabletop) and a person will be controlling the movement of the robot. The main purpose of this step is to test the drivetrain.</li>
+											<li>Add more obstacles to the maze by changing the surface of the field. We will add materials such as sand, rocks, and wood chips to create bumps and ridges. The robot will be teleoperated, so the purpose of this step is to test the robot’s ability to get across rougher terrain.</li>
+											<li>Create a vertical shaft. This will give us the opportunity to test our tether when the robot is traveling downward. This environment will not necessarily have any obstacles, as we simply want to test the process of lowering the robot and measuring the amount of vertical distance covered.</li>
+											<li>We want to combine the three previous steps by creating a terrain that more closely resembles rubble. This rubble-like environment will have inclines, declines, and varied terrain. At this stage, the robot is still controlled by a person because we want to see the capabilities of the robot. We can modify this environment and test the robot further by changing the grade of the incline and decline planes.</li>
+											<li>Once we know that our robot can work in Steps 1 through 4, we want the robot to go through these motions autonomously. Therefore, this step will focus on creating a basic autonomous for the environments in Step 1 and Step 2.</li>
+											<li>Now that our robot can traverse through terrain autonomously, we want it to be able to detect heat within the rubble. We will use an infrared sensor to detect heat, and the robot will have to learn different scenarios.
+												<ul>
+													<li>One of these scenarios is having a heat source in one out of three paths; the robot must be able to choose to follow the path with the heat source. If it enters the wrong path, it must have some memory system so that it can retrace its steps back to the crossroads and choose a different path.</li>
+													<li>Another situation is if the heat source is near the robot, but the only path toward the heat is going around a longer path. We want the robot to take the longer path to eventually reach the source. One way of thinking about this problem is having the robot first check for a clear path, then having the robot check for heat.</li>
+												</ul></li>
+											<li>We want to combine the environments in Step 4 and Step 6, and then have the robot run autonomously in this environment.</li>
+											<li>(Optional) Automating the spool is the next step after developing a working autonomous program. Instead of manually releasing more tether, the robot would be able to sense when it needs to travel farther and send signals to relax the tension on the tether.</li>
+										</ol>
+									</p><br><br>
+
+							<h1>Meeting 6: Controls, Motors, and Presentation</h1>
+									<p>
+										We began thinking about how we would present our robot during the demonstration, so we planned out how we wanted our board to be formatted. We decided to create a maze from 2’x3’ plywood, and then add pieces on our maze using pegs that we could potentially move around so that we could adjust the maze to any configuration. We drew the grid on our plywood and began thinking about materials for creating the walls of our maze. We also mapped out an ideal maze that we could default to for demonstration purposes. <br><br>
+
+										We also tested our Arduino Nano to try to light up an LED. However, we realized that we needed an H-Bridge to drive our motors to control the voltage going into the Arduino. There were many failed attempts to do so over the next few meetings. <br><br>
+
+										We also realized that our original drone motors’ speed was too large at 12000 RPM; it would be too difficult to gear down our motors to approximately 100 RPM. As a result, we researched stepper motors that could do the job and run at much slower speeds. We ultimately decided on new with a planetary gearbox that reduced the speed to around 55 RPM to 100 RPM. We designed a new configuration with motors on opposite ends of our box in order to fit gears, which are necessary because this RPM is still too high for our needs. We need to gear down and reduce another step with a gear from six to ten teeth. <br><br>
+
+										We also updated the website and completed the team section of the website, which includes team biographies and a summary of what we are doing as a team. Now, we have to develop the section of our website where we can upload all of our journals.
+									</p><br><br>
+
+							<h1>Meeting 7: Controls,3D Prints, Sensors</h1>
+									<p>
+										We were finally able to successfully light up the LED through the Arduino Nano. We also began to look at creating a library for the Arduino. We successfully got the H-Bridge to work with the new motors, but we were unable to get the motors to rotate in different directions. Motors were able to rotate in both directions while directly attached to the Arduino, but not through the H-Bridge. After more testing, we figured that it had to do with our transistors. <br><br>
+
+										We continued the design of the robot and created CAD drawings of the hemispheres of the robot. We also created the centerpiece that will hold our Arduino, two motors, and IR Sensors. However, we decided that this design was not going to work so we created a new centerpiece that no longer required the motors to be staggered on opposite ends of the centerpiece. We either need to purchase or print gears to get the right speed. Our first 3D print of the Hemisphere was created and successful, this is the outermost casing that will be house everything else. We will continue to print more components of our robot. <br><br>
+
+										We decided to implement a system of controls, where we would control the robot through a Microsoft or Xbox controller. This seemed like the most logical way to control the movement of the robot. <br><br>
+
+										We also began testing the IR sensors, but we were unsure whether or not we would use them because it seemed extremely difficult to map with only one IR sensor. We considered adding a second sensor to better help the robot find its location.
+									</p><br><br>
+
 
 				</div>
 
