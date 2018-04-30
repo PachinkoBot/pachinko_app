@@ -4,12 +4,19 @@ import animated_title from '../common/animated_title.vue'
 import animated_par from '../common/animated_par.vue'
 
 export default {
-	name: 'Team',
+	name: 'Journal',
 	components: {
 		MemberPage,
 		animated_image,
 		animated_title,
 		animated_par,
+	},
+	data: function() {
+		return {
+			isActive: false,
+			activeMember: null,
+			isLocked: false,
+		}
 	},
 	methods: {
 		beforeEnter: function(el, done) {
