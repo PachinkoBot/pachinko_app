@@ -168,7 +168,7 @@
 										We also updated the website and completed the team section of the website, which includes team biographies and a summary of what we are doing as a team. Now, we have to develop the section of our website where we can upload all of our journals.
 									</p><br><br>
 
-							<h1>Meeting 7: Controls,3D Prints, Sensors</h1>
+							<h1>Meeting 7: Controls, 3D Prints, Sensors</h1>
 									<p>
 										We were finally able to successfully light up the LED through the Arduino Nano. We also began to look at creating a library for the Arduino. We successfully got the H-Bridge to work with the new motors, but we were unable to get the motors to rotate in different directions. Motors were able to rotate in both directions while directly attached to the Arduino, but not through the H-Bridge. After more testing, we figured that it had to do with our transistors. <br><br>
 
